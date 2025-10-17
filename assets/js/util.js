@@ -98,12 +98,12 @@ export function formatMinecraftVersions (versions, knownVersions) {
   }).join(', ')
 }
 
+// 이 함수는 원래대로 '시점'의 시간을 표시하도록 되돌립니다.
 export function formatTimestampSeconds (secs) {
   const date = new Date(0)
   date.setUTCSeconds(secs)
-  return date.toLocaleTimeString()
+  return date.toLocaleTimeString() // 예: "오후 3:15:00"
 }
-
 export function formatDate (secs) {
   const date = new Date(0)
   date.setUTCSeconds(secs)

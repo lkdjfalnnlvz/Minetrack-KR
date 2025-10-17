@@ -34,6 +34,9 @@ export class App {
   }
 
   setPublicConfig (publicConfig) {
+    if (publicConfig.graphDurationLabel) {
+      publicConfig.graphDurationLabel = this._formatGraphDurationLabel(publicConfig.graphDurationLabel)
+    }
     this.publicConfig = publicConfig
 
     this.serverRegistry.assignServers(publicConfig.servers)
@@ -41,6 +44,26 @@ export class App {
     // Start repeating frontend tasks once it has received enough data to be considered active
     // This simplifies management logic at the cost of each task needing to safely handle empty data
     this.initTasks()
+  }
+
+  _formatGraphDurationLabel (label) {
+    // "336h" -> "2주"와 같은 로직 구현
+    // 여기서는 간단한 예시로 "h"로 끝나는 경우를 처리합니다.
+    const match = label.match(/^(\d+)h$/) // 숫자 + 'h' 패턴 매칭
+    if (match) {
+      const hours = parseInt(match[1])
+      const days = Math.floor(hours / 24)
+      const weeks = Math.floor(days / 7)
+
+      if (weeks > 0) {
+        return `${weeks}주`
+      } else if (days > 0) {
+        return `${days}일`
+      } else {
+        return `${hours}시간` // 24시간 미만일 경우 그대로 '시간'으로 표시
+      }
+    }
+    return label // 매칭되지 않으면 원래 레이블 반환
   }
 
   handleSyncComplete () {

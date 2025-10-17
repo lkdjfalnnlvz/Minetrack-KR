@@ -1,12 +1,12 @@
 const SORT_OPTIONS = [
   {
-    getName: () => 'Players',
+    getName: () => '접속자 수',
     sortFunc: (a, b) => b.playerCount - a.playerCount,
     highlightedValue: 'player-count'
   },
   {
     getName: (app) => {
-      return `${app.publicConfig.graphDurationLabel} Peak`
+      return `${app.publicConfig.graphDurationLabel} 최고접속`
     },
     sortFunc: (a, b) => {
       if (!a.lastPeakData && !b.lastPeakData) {
@@ -30,7 +30,7 @@ const SORT_OPTIONS = [
     highlightedValue: 'peak'
   },
   {
-    getName: () => 'Record',
+    getName: () => '최고 기록',
     sortFunc: (a, b) => {
       if (!a.lastRecordData && !b.lastRecordData) {
         return 0

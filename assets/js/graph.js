@@ -202,7 +202,7 @@ export class GraphDisplayManager {
       return {
         stroke: serverRegistration.data.color,
         width: 2,
-        value: (_, raw) => `${formatNumber(raw)} Players`,
+        value: (_, raw) => `${formatNumber(raw)}명`,
         show: serverRegistration.isVisible,
         spanGaps: true,
         points: {
