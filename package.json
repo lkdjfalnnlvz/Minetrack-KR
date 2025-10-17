@@ -25,12 +25,7 @@
   "bugs": {
     "url": "https://github.com/Cryptkeeper/Minetrack/issues"
   },
-  "homepage": "https://lkdjfalnnlvz.github.io/Minetrack-KR/",
-  "scripts": {
-	  "deploy": "gh-pages -d public"
-      "build": "eslint assets/js/*.js && parcel build assets/html/index.html --dist-dir dist",
-      "dev": "parcel build assets/html/index.html --no-optimize --dist-dir dist"
-  },
+  "homepage": "https://github.com/Cryptkeeper/Minetrack#README",
   "engines": {
     "node": ">=12.4.0"
   },
@@ -53,9 +48,12 @@
     "eslint-plugin-promise": "^4.2.1",
     "parcel": "^2.8.0"
   },
+  "scripts": {
+    "build": "eslint assets/js/*.js && parcel build assets/html/index.html --dist-dir dist",
+    "dev": "parcel build assets/html/index.html --no-optimize --dist-dir dist"
+  },
   "optionalDependencies": {
     "bufferutil": "^4.0.1",
     "utf-8-validate": "^5.0.2"
   }
 }
-
