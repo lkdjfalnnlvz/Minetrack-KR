@@ -1,7 +1,7 @@
 {
 	"site": {
 		"port": 8080,
-		"ip": "0.0.0.0"
+		"ip": "localhost"
 	},
 	"rates": {
 		"pingAll": 3000,
@@ -12,7 +12,7 @@
 		"interval": 3600000
 	},
 	"logFailedPings": true,
-	"logToDatabase": false,
-	"graphDuration": 86400000,
-	"serverGraphDuration": 180000
+	"logToDatabase": true,
+	"graphDuration": 1209600000,
+	"serverGraphDuration": 1209600000
 }
