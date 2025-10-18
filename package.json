@@ -6,9 +6,9 @@
     "finalhandler": "^1.1.2",
     "mcpe-ping-fixed": "0.0.3",
     "mcping-js": "^1.4.1",
+    "pg": "^8.16.3",
     "request": "2.88.2",
     "serve-static": "^1.16.2",
-    "sqlite3": "^5.1.5",
     "uplot": "1.0.11",
     "winston": "^2.4.4",
     "ws": "^7.5.10"
@@ -58,4 +58,3 @@
     "utf-8-validate": "^5.0.2"
   }
 }
-
