@@ -1,12 +1,32 @@
 [
 	{
-		"name": "Hypixel",
-		"ip": "mc.hypixel.net",
+		"name": "띵타이쿤 온라인",
+		"ip": "ddingtycoon.kr",
 		"type": "PC"
 	},
 	{
-		"name": "CubeCraft",
-		"ip": "play.cubecraft.net",
+		"name": "동글랜드",
+		"ip": "dongleland.com",
+		"type": "PC"
+	},
+	{
+		"name": "위르드 온라인",
+		"ip": "wyrd.kr",
+		"type": "PC"
+	},
+	{
+		"name": "베어타운",
+		"ip": "beartown.kr",
+		"type": "PC"
+	},
+	{
+		"name": "PlanetEarth",
+		"ip": "planetearth.kr",
+		"type": "PC"
+	},
+	{
+		"name": "렌독서버",
+		"ip": "rendog.kr",
 		"type": "PC"
 	}
 ]
